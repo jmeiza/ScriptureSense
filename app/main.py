@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import scripture_routes, saved_verses
+from .routes import scripture_routes, saved_verses
 
 app = FastAPI()
 
@@ -17,4 +17,4 @@ app.include_router(saved_verses.router)
 # @app.post("/get-scripture")
 # def get_scripture(feeling: str):
 #     verse = get_scripture_for_feeling(feeling)
-#     return {"feeling": feeling, "verse": verse}
+#     return {"feeling": feeling, "verse": verse}s

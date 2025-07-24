@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.schema import SavedVerse
+from ..models.schema import SavedVerse
 
 router = APIRouter()
 

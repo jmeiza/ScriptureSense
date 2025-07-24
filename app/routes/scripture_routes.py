@@ -1,9 +1,13 @@
 from fastapi import APIRouter
-from services.scripture_service import get_Scripture_for_feeling
+from ..services.scripture_service import get_scripture_for_feeling
 
 router = APIRouter()
 
-@router.post("/get-scripture")
+@router.get("/get-scripture")
 def get_scripture(feeling: str):
-    verse = get_Scripture_for_feeling(feeling)
-    return {"feeling": feeling, "verse":verse}
+    verses = get_scripture_for_feeling(feeling)
+    
+    if not verses:
+        return {"feeling": feeling, "message": "No matching verses found for that feeling."}
+    
+    return {"feeling": feeling, "verse":verses}

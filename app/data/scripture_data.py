@@ -1,5 +1,4 @@
 scripture_data = {
-    {
     "anxiety": [
         "Philippians 4:6 - Do not worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done.",
         "1 Peter 5:7 - Cast all your anxiety on Him because He cares for you."
@@ -15,5 +14,4 @@ scripture_data = {
     "happy": [
         "Philippians 4:4 - Rejoice in the Lord always; and again I say, rejoice."
     ]
-}
 }
