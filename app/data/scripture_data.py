@@ -3,9 +3,8 @@ scripture_data = {
         "Philippians 4:6 - Do not worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done.",
         "1 Peter 5:7 - Cast all your anxiety on Him because He cares for you."
     ],
-    "grief": [
-        "Psalm 34:18 - The Lord is close to the brokenhearted, He rescues those whose spirits are crushed.",
-        "Matthew 5:4 - Blessed are they that mourn, for they shall be comforted."
+    "sad": [
+        "Psalm 34:18 - The Lord is close to the brokenhearted, He rescues those whose spirits are crushed."
     ],
     "fear": [
         "Isaiah 41:10 - So do not fear, for I am with you...",

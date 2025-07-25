@@ -5,9 +5,6 @@ router = APIRouter()
 
 @router.get("/get-scripture")
 def get_scripture(feeling: str):
-    verses = get_scripture_for_feeling(feeling)
+    verses_by_theme = get_scripture_for_feeling(feeling)
     
-    if not verses:
-        return {"feeling": feeling, "message": "No matching verses found for that feeling."}
-    
-    return {"feeling": feeling, "verse":verses}
+    return {"feeling": feeling, "verse":verses_by_theme}
