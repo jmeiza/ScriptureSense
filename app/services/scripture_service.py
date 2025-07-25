@@ -19,7 +19,7 @@ keywords_map = {
 
 DEFAULT_VERSE = "For this is how God loved the world. He gave His one and only Son, so that everyone who believes in Him will not perish but have eternal life. ~ John 3:16"
 
-def get_scripture_for_feeling(feeling_input: str) -> str:
+def get_scripture_for_feeling(feeling_input: str) -> dict:
     feeling_input = feeling_input.lower()
     matched_themes = set()
 
@@ -46,5 +46,14 @@ def get_scripture_for_feeling(feeling_input: str) -> str:
         "verses": result
     }
 
-def get_verse_by_theme(theme: str) -> str:
-    return random.choice(scripture_data.get(theme.lower(), [DEFAULT_VERSE]))
+def get_verse_by_theme(theme: str) -> dict:
+    theme_lower = theme.lower()
+    verses = scripture_data.get(theme_lower)
+
+    if verses:
+        return {"verse": random.choice(verses)}
+    else:
+        return {
+            "verse": DEFAULT_VERSE,
+            "note": f"No exact match found for theme '{theme}', here's a defualt verse."
+        }

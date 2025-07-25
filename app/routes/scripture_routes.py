@@ -11,7 +11,7 @@ def get_scripture(feeling: str = Query(default=None, min_length=3, max_length=10
         if not theme:
             raise HTTPException(status_code=400, detail="Theme cannot be empty.")
         verse = get_verse_by_theme(theme)
-        return {"theme": theme, " verse":verse}
+        return {"theme": theme, **verse}
 
     if feeling:
         feeling = feeling.strip()
