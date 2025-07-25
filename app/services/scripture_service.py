@@ -17,7 +17,7 @@ keywords_map = {
     "fearful":"fear",
 }
 
-DEFAULT_VERSE = "Romans 8:28 - And we know that in all things God works for the good of those who love him."
+DEFAULT_VERSE = "For this is how God loved the world. He gave His one and only Son, so that everyone who believes in Him will not perish but have eternal life. ~ John 3:16"
 
 def get_scripture_for_feeling(feeling_input: str) -> str:
     feeling_input = feeling_input.lower()
@@ -30,7 +30,10 @@ def get_scripture_for_feeling(feeling_input: str) -> str:
     
     # If there are no matches, return the default verse
     if not matched_themes:
-        return {"Important": [DEFAULT_VERSE]}
+        return {
+            "matched_feelings": [],
+            "verse": [DEFAULT_VERSE]
+        }
     
     #Collect verses for each matched theme
     result = {}
@@ -38,4 +41,10 @@ def get_scripture_for_feeling(feeling_input: str) -> str:
         verses = scripture_data.get(theme, [])
         result[theme] = verses if verses else [DEFAULT_VERSE]
 
-    return result
+    return {
+        "matched_feelings": list(matched_themes),
+        "verses": result
+    }
+
+def get_verse_by_theme(theme: str) -> str:
+    return random.choice(scripture_data.get(theme.lower(), [DEFAULT_VERSE]))

@@ -1,16 +1,16 @@
 scripture_data = {
     "anxiety": [
-        "Philippians 4:6 - Do not worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done.",
-        "1 Peter 5:7 - Cast all your anxiety on Him because He cares for you."
+        "Do not worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done. ~ Philippians 4:6",
+        "Cast all your anxiety on Him because He cares for you. ~ 1 Peter 5:7"
     ],
     "sad": [
-        "Psalm 34:18 - The Lord is close to the brokenhearted, He rescues those whose spirits are crushed."
+        "The Lord is close to the brokenhearted, He rescues those whose spirits are crushed. ~ Psalm 34:18"
     ],
     "fear": [
-        "Isaiah 41:10 - So do not fear, for I am with you...",
-        "Psalm 46:10 = Be still and know that I am God..."
+        "So do not fear, for I am with you... ~ Isaiah 41:10",
+        "Be still and know that I am God... ~ Psalm 46:10"
     ],
     "happy": [
-        "Philippians 4:4 - Rejoice in the Lord always; and again I say, rejoice."
+        "Rejoice in the Lord always; and again I say, rejoice. ~ Philippians 4:4"
     ]
 }
