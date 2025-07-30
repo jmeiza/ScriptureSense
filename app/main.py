@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from .routes import scripture_routes, saved_verses
 from .database import Base, engine
-from .models.saved_verse_model import SavedVerse
+from .models import saved_verse_model 
 
 Base.metadata.create_all(bind=engine)
 
