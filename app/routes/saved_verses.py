@@ -1,35 +1,28 @@
-import json
-from fastapi import APIRouter
-from ..models.schema import SavedVerse
-from pathlib import Path
+from typing import List
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+from ..models.schema import SavedVerse as SavedVerseSchema
+from ..models.saved_verse_model import SavedVerse
+from ..database import SessionLocal
 
 router = APIRouter()
 
-SAVE_PATH = Path("data/saved_verses.json")
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
-def load_all():
-    if not SAVE_PATH.exists():          # If the file doesn't exists yet, create it
-        SAVE_PATH.parent.mkdir(parents=True, exist_ok=True)
-        with open(SAVE_PATH, "w") as f:
-            json.dump({}, f, indent=4)
-        return {}
-    
-    with open(SAVE_PATH, "r") as f:
-        return json.load(f)
-
-def save_all(data):
-    with open(SAVE_PATH, "w") as f:
-        json.dump(data, f, indent=4)
 
 @router.post("/save-verse")
-def save_verse(saved_verse: SavedVerse):
-    data = load_all()
-    user_verses = data.setdefault(saved_verse.username, [])
-    user_verses.append(saved_verse.dict())
-    save_all(data)
-    return {"message": "Verse saved successfully."}
+def save_verse(saved_verse: SavedVerseSchema, db: Session = Depends(get_db)):
+    verse = SavedVerse(**saved_verse.dict())
+    db.add(verse)
+    db.commit()
+    db.refresh(verse)
+    return {"message": "Verse saved successfully.", "id": verse.id}
 
-@router.get("/get-saved/{username}")
-def get_saved_verses(username: str):
-    data = load_all()
-    return data.get(username, [])
+@router.get("/get-saved/{username}", response_model=List[SavedVerseSchema])
+def get_saved_verses(username: str, db: Session = Depends(get_db)):
+    return db.query(SavedVerse).filter(SavedVerse.username == username).all()

@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 from .routes import scripture_routes, saved_verses
+from .database import Base, engine
+from .models.saved_verse_model import SavedVerse
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
