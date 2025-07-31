@@ -26,3 +26,4 @@ def save_verse(saved_verse: SavedVerseSchema, db: Session = Depends(get_db)):
 @router.get("/get-saved/{username}", response_model=List[SavedVerseSchema])
 def get_saved_verses(username: str, db: Session = Depends(get_db)):
     return db.query(SavedVerse).filter(SavedVerse.username == username).all()
+    
