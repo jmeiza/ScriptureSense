@@ -10,11 +10,8 @@ embeddings_path = BASE_DIR / "verse_embeddings.json"
 
 api_key = os.getenv("OPENAI_API_KEY")
 
-print("OPENAI_API_KEY in openai_service:", api_key)
-
-
-# if not api_key:
-#     raise ValueError("Missing OPENAI_API_KEY in environment variables.")
+if not api_key:
+    raise ValueError("Missing OPENAI_API_KEY in environment variables.")
 
 client = OpenAI(api_key=api_key)
 
