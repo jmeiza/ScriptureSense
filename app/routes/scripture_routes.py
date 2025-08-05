@@ -1,25 +1,18 @@
 from fastapi import APIRouter, Query, HTTPException
-from ..services.scripture_service import get_scripture_for_feeling, get_verse_by_theme
+from ..services.openai_service import find_top_verses
 
 router = APIRouter()
 
 @router.get("/get-scripture")
-def get_scripture(feeling: str = Query(default=None, min_length=3, max_length=100), theme: str = Query(default=None, min_length=3, max_length=100)):
-
-    if theme:
-        theme = theme.strip()
-        if not theme:
-            raise HTTPException(status_code=400, detail="Theme cannot be empty.")
-        verse = get_verse_by_theme(theme)
-        return {"theme": theme, **verse}
-
-    if feeling:
-        feeling = feeling.strip()
-        if not feeling:
-            raise HTTPException(status_code=400, detail="Feeling cannot be empty.")
-        verse = get_scripture_for_feeling(feeling)
-        return {"feeling":feeling, **verse}
+def get_scripture(feeling: str = Query(default=None, min_length=3, max_length=100)):
+    feeling = feeling.strip()
+    if not feeling:
+        raise HTTPException(status_code=400, detail="Feeling cannot be empty.")
     
-    raise HTTPException(status_code=400, detail="You must provide either a 'feeling' or a 'theme'.")
+    results = find_top_verses(feeling)
+    
+    if results:
+        return {"feeling": feeling, "matches": results}
+    else:
+        raise HTTPException(status_code=400, detail="No matching scripture found.")
 
-# **response is called dictionary unpacking

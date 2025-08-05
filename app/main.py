@@ -1,7 +1,14 @@
+from dotenv import load_dotenv
+from pathlib import Path
+
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
 from fastapi import FastAPI
 from .routes import scripture_routes, saved_verses
 from .database import Base, engine
 from .models import saved_verse_model 
+
 
 Base.metadata.create_all(bind=engine)
 

@@ -7,6 +7,5 @@ class SavedVerse(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, index=True)
     verse = Column(String)
-    theme = Column(String, nullable=True)
     feeling = Column(String, nullable=True)
     

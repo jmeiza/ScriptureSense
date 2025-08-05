@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": "6-7",
+    "text": "Do not be anxious about anything, but in every situation, by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
+    "themes": ["anxiety", "peace", "trust"]
+  },
+  {
+    "id": 2,
+    "book": "1 Peter",
+    "chapter": 5,
+    "verse": "6-7",
+    "text": "Cast all your anxieties on him because he cares for you.",
+    "themes": ["anxiety", "care", "comfort"]
+  },
+  {
+    "id": 3,
+    "book": "John",
+    "chapter": 14,
+    "verse": "27",
+    "text": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+    "themes": ["peace", "fear", "comfort"]
+  },
+  {
+    "id": 4,
+    "book": "Isaiah",
+    "chapter": 41,
+    "verse": "10",
+    "text": "Fear not, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.",
+    "themes": ["fear", "strength", "presence"]
+  },
+  {
+    "id": 5,
+    "book": "Matthew",
+    "chapter": 6,
+    "verse": "34",
+    "text": "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.",
+    "themes": ["worry", "anxiety", "trust"]
+  },
+  {
+    "id": 6,
+    "book": "2 Timothy",
+    "chapter": 1,
+    "verse": "7",
+    "text": "For God gave us a spirit not of fear but of power and love and self‑control.",
+    "themes": ["fear", "power", "self-control"]
+  },
+  {
+    "id": 7,
+    "book": "Psalm",
+    "chapter": 94,
+    "verse": "19",
+    "text": "When anxiety was great within me, your consolation brought me joy to my soul.",
+    "themes": ["anxiety", "comfort", "peace"]
+  },
+  {
+    "id": 8,
+    "book": "Psalm",
+    "chapter": 55,
+    "verse": "22",
+    "text": "Cast your burden on the Lord, and he will sustain you; he will never let the righteous be shaken.",
+    "themes": ["burden", "sustain", "trust"]
+  },
+  {
+    "id": 9,
+    "book": "Psalm",
+    "chapter": 34,
+    "verse": "4",
+    "text": "I sought the Lord, and he answered me and delivered me from all my fears.",
+    "themes": ["fear", "deliverance", "faith"]
+  },
+  {
+    "id": 10,
+    "book": "Joshua",
+    "chapter": 1,
+    "verse": "9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.",
+    "themes": ["courage", "fear", "presence"]
+  },
+  {
+    "id": 11,
+    "book": "Psalm",
+    "chapter": 23,
+    "verse": "1-3",
+    "text": "The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters, he restores my soul.",
+    "themes": ["peace", "guidance", "rest"]
+  },
+  {
+    "id": 12,
+    "book": "Matthew",
+    "chapter": 11,
+    "verse": "28-30",
+    "text": "Come to me, all who labor and are heavy laden, and I will give you rest.",
+    "themes": ["burden", "rest", "peace"]
+  },
+  {
+    "id": 13,
+    "book": "Psalm",
+    "chapter": 16,
+    "verse": "8",
+    "text": "I keep my eyes always on the Lord. With him at my right hand, I will not be shaken.",
+    "themes": ["trust", "steadfast", "fearlessness"]
+  },
+  {
+    "id": 14,
+    "book": "Hebrews",
+    "chapter": 13,
+    "verse": "6",
+    "text": "So we can confidently say, “The Lord is my helper; I will not fear; what can man do to me?”",
+    "themes": ["fear", "help", "confidence"]
+  },
+  {
+    "id": 15,
+    "book": "Psalm",
+    "chapter": 27,
+    "verse": "1",
+    "text": "The Lord is my light and my salvation; whom shall I fear? The Lord is the stronghold of my life; of whom shall I be afraid?",
+    "themes": ["fear", "salvation", "confidence"]
+  },
+  {
+    "id": 16,
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verse": "11",
+    "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+    "themes": ["hope", "future", "trust"]
+  },
+  {
+    "id": 17,
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": "5-6",
+    "text": "Trust in the Lord with all your heart, and do not lean on your own understanding.",
+    "themes": ["trust", "guidance", "wisdom"]
+  },
+  {
+    "id": 18,
+    "book": "Romans",
+    "chapter": 15,
+    "verse": "13",
+    "text": "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+    "themes": ["hope", "peace", "joy"]
+  },
+  {
+    "id": 19,
+    "book": "Exodus",
+    "chapter": 14,
+    "verse": "14",
+    "text": "The Lord will fight for you; you need only to be still.",
+    "themes": ["strength", "trust", "peace"]
+  },
+  {
+    "id": 20,
+    "book": "Lamentations",
+    "chapter": 3,
+    "verse": "22-23",
+    "text": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning.",
+    "themes": ["mercy", "hope", "faithfulness"]
+  }
+]
