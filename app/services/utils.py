@@ -24,7 +24,7 @@ def hash_password(password: str) -> str:
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    return pwd_context.verify(plain_password, hash_password)
+    return pwd_context.verify(plain_password, hashed_password)
 
 
 def create_access_token(data: dict, expires_delta: timedelta= None):
@@ -49,8 +49,8 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session= Depends(g
     except JWTError:
         raise credentials_Exception
 
-    user = db.query(User).filter(User.id == user.id).fiirst()
-    if user in None:
+    user = db.query(User).filter(User.id == user_id).first()
+    if user is None:
         raise credentials_Exception
 
     return {"user_id": user.id, "username": user.username, "email": user.email}

@@ -1,21 +1,24 @@
 from typing import List
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from ..models.schema import SavedVerse as SavedVerseSchema
+from ..models.schema import SavedVerseCreate, SavedVerseResponse
 from ..models.saved_verse_model import SavedVerse
 from ..models.database import get_db
+from ..services.utils import get_current_user
 
-router = APIRouter()
+router = APIRouter(tags=["Saved Verses"])
 
-@router.post("/save-verse")
-def save_verse(saved_verse: SavedVerseSchema, db: Session = Depends(get_db)):
-    verse = SavedVerse(**saved_verse.dict())
+@router.post("/", response_model=SavedVerseResponse)
+def save_verse(saved_verse: SavedVerseCreate, db: Session = Depends(get_db), current_user: dict = Depends(get_current_user)):
+
+    verse = SavedVerse(**saved_verse.dict(), user_id=current_user["user_id"])
     db.add(verse)
     db.commit()
     db.refresh(verse)
-    return {"message": "Verse saved successfully.", "id": verse.id}
+    return verse
 
-@router.get("/get-saved/{username}", response_model=List[SavedVerseSchema])
-def get_saved_verses(username: str, db: Session = Depends(get_db)):
-    return db.query(SavedVerse).filter(SavedVerse.username == username).all()
+@router.get("/", response_model=List[SavedVerseResponse])
+def get_saved_verses(db: Session = Depends(get_db), current_user: dict = Depends(get_current_user)):
+    verses = db.query(SavedVerse).filter(SavedVerse.user_id == current_user["user_id"]).all()
+    return verses
     

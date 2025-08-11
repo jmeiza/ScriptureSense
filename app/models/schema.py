@@ -1,13 +1,26 @@
 from pydantic import BaseModel, EmailStr
 
-class SavedVerse(BaseModel):
-    username: str
+# Saved Verse Schemas
+class SavedVerseBase(BaseModel):
     verse: str 
+    reference: str
     feeling: str | None = None
 
     class Config:
-        orm_mode = True     #This is what enables the conversion from SQLAlchemy to Pydantic conversion
-        
+        from_attributes = True     #This is what enables the conversion from SQLAlchemy to Pydantic conversion
+
+class SavedVerseCreate(SavedVerseBase):
+    pass
+
+class SavedVerseResponse(SavedVerseBase):
+    id: int
+    user_id: int
+
+    class Config:
+        from_attributes = True
+
+
+# User schemas
 class UserCreate(BaseModel):
     username: str
     email: EmailStr
@@ -20,7 +33,7 @@ class UserLogin(BaseModel):
 class UserResponse(BaseModel):
     id: int
     username: str
-    emial: EmailStr
+    email: EmailStr
 
     class Config:
         orm_mode = True
