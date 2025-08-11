@@ -6,7 +6,7 @@ load_dotenv(dotenv_path=env_path)
 
 from fastapi import FastAPI
 from .routes import scripture_routes, saved_verses
-from .database import Base, engine
+from .models.database import Base, engine
 from .models import saved_verse_model 
 
 

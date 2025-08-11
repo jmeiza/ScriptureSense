@@ -3,17 +3,9 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from ..models.schema import SavedVerse as SavedVerseSchema
 from ..models.saved_verse_model import SavedVerse
-from ..database import SessionLocal
+from ..models.database import get_db
 
 router = APIRouter()
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
 
 @router.post("/save-verse")
 def save_verse(saved_verse: SavedVerseSchema, db: Session = Depends(get_db)):
