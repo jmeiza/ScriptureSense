@@ -64,7 +64,7 @@ word-declaration-app/
 
 3. **Configure Environment Variables**
     Create a .env file in the root directory and add:
-    ```
+    ```env
     OPENAI_API_KEY=your_openai_api_key
     SECRET_KEY=your_secret_key
     ALGORITHM=HS256
@@ -78,15 +78,19 @@ word-declaration-app/
 ## 📡 API Endpoints
     Method	Endpoint	    Description
     POST	/auth/register	Create new user
+
     POST	/auth/login	    Login & get token
+
     GET     /get-scripture  Return scripture based on feeling
+
     POST    /saved-verses   Save verse to user's account (needs jwt token)
+
     GET     /saved-verses   Retrieve all of user's saved verses (needs jwt token)
 
 ### Register Example
     POST /auth/register
     Content-Type: application/json
-    ```
+    ```json
     {
         "username": "test",
         "email": "test@example.com,
