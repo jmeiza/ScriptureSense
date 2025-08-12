@@ -103,7 +103,7 @@ word-declaration-app/
         "email": "test@example.com,
         "password": "password1"
     }
-    ```</pre>
+  
 ### Login Return
     {
         "access_token": "your.jwt.token
@@ -128,4 +128,12 @@ word-declaration-app/
     "reference": "Jeremiah 29:11",
     "feeling": "Hopeful"
     }
+
+### Get Saved Verses
+    GET /saved-verses
+
+    Headers:
+    Authorization: Bearer <your_access_token_here>
+    Content-Type: application/json
+
    
