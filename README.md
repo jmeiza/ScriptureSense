@@ -104,7 +104,7 @@ word-declaration-app/
 ### Login return
     ```
     {
-        "access_toke": "your.jwt.token
+        "access_token": "your.jwt.token
         "token_type": "bearer"
     }
     ```
@@ -113,3 +113,19 @@ word-declaration-app/
     GET /get-scripture
 
     http://127.0.0.1:8000/get-scripture?feeling=I am feeling anxious and unhappy.
+
+### Save a Verse
+    POST /saved-verses
+    Headers:
+    ```
+    Authorization: Bearer <your_access_token_here>
+    Content-Type: application/json
+    ```
+    Request Body:
+    ```
+    {
+    "verse": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you a future and a hope.",
+    "reference": "Jeremiah 29:11",
+    "feeling": "Hopeful"
+    }
+    ```
