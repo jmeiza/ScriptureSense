@@ -99,7 +99,6 @@ word-declaration-app/
 ### Login Request Example 
     POST /auth/login
     Content-Type: application/json
-    <pre markdown="1"> ```python
     {
         "email": "test@example.com,
         "password": "password1"

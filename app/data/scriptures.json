@@ -5,7 +5,7 @@
     "chapter": 4,
     "verse": "6-7",
     "text": "Do not be anxious about anything, but in every situation, by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
-    "themes": ["anxiety", "peace", "trust"]
+    "themes": ["anxiety", "peace", "faith"]
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "chapter": 5,
     "verse": "6-7",
     "text": "Cast all your anxieties on him because he cares for you.",
-    "themes": ["anxiety", "care", "comfort"]
+    "themes": ["anxiety", "worry", "comfort"]
   },
   {
     "id": 3,
@@ -156,7 +156,167 @@
     "book": "Lamentations",
     "chapter": 3,
     "verse": "22-23",
-    "text": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning.",
+    "text": "The steadfast love of the Lord never ceases; His mercies never come to an end; they are new every morning.",
     "themes": ["mercy", "hope", "faithfulness"]
+  },
+  {
+    "id": 21,
+    "book": "Psalm",
+    "chapter": 46,
+    "verse": "1-3",
+    "text": "God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea.",
+    "themes": ["strength", "help", "fearlessness"]
+  },
+  {
+    "id": 22,
+    "book": "Isaiah",
+    "chapter": 40,
+    "verse": "31",
+    "text": "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+    "themes": ["hope", "strength", "endurance"]
+  },
+  {
+    "id": 23,
+    "book": "Romans",
+    "chapter": 8,
+    "verse": "28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+    "themes": ["trust", "providence", "purpose"]
+  },
+  {
+    "id": 24,
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": "13",
+    "text": "I can do all things through him who gives me strength.",
+    "themes": ["strength", "faith", "empowerment"]
+  },
+  {
+    "id": 25,
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verse": "9",
+    "text": "My grace is sufficient for you, for my power is made perfect in weakness.",
+    "themes": ["grace", "power", "strength"]
+  },
+  {
+    "id": 26,
+    "book": "Psalm",
+    "chapter": 91,
+    "verse": "1-2",
+    "text": "Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty. I will say of the Lord, 'He is my refuge and my fortress, my God, in whom I trust.'",
+    "themes": ["trust", "refuge", "protection"]
+  },
+  {
+    "id": 27,
+    "book": "John",
+    "chapter": 16,
+    "verse": "33",
+    "text": "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.",
+    "themes": ["peace", "overcome", "encouragement"]
+  },
+  {
+    "id": 28,
+    "book": "Psalm",
+    "chapter": 118,
+    "verse": "6",
+    "text": "The Lord is with me; I will not be afraid. What can mere mortals do to me?",
+    "themes": ["fearlessness", "confidence", "trust"]
+  },
+  {
+    "id": 29,
+    "book": "Hebrews",
+    "chapter": 12,
+    "verse": "1-2",
+    "text": "Let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.",
+    "themes": ["perseverance", "faith", "encouragement"]
+  },
+  {
+    "id": 30,
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "verse": "13-14",
+    "text": "Be on your guard; stand firm in the faith; be courageous; be strong. Do everything in love.",
+    "themes": ["strength", "courage", "love"]
+  },
+  {
+    "id": 31,
+    "book": "Jeremiah",
+    "chapter": 31,
+    "verse": "3",
+    "text": "I have loved you with an everlasting love; therefore I have continued my faithfulness to you.",
+    "themes": ["love", "faithfulness", "promise"]
+  },
+  {
+    "id": 32,
+    "book": "Isaiah",
+    "chapter": 54,
+    "verse": "10",
+    "text": "Though the mountains be shaken and the hills be removed, yet my unfailing love for you will not be shaken nor my covenant of peace be removed,” says the Lord.",
+    "themes": ["love", "covenant", "peace"]
+  },
+  {
+    "id": 33,
+    "book": "Numbers",
+    "chapter": 23,
+    "verse": "19",
+    "text": "God is not human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill?",
+    "themes": ["faithfulness", "truth", "promise"]
+  },
+  {
+    "id": 34,
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "verse": "20",
+    "text": "For no matter how many promises God has made, they are 'Yes' in Christ. And so through him the 'Amen' is spoken by us to the glory of God.",
+    "themes": ["promise", "faithfulness", "Christ"]
+  },
+  {
+    "id": 35,
+    "book": "Psalm",
+    "chapter": 89,
+    "verse": "34",
+    "text": "I will not violate my covenant or alter what my lips have uttered.",
+    "themes": ["covenant", "promise", "faithfulness"]
+  },
+  {
+    "id": 36,
+    "book": "Lamentations",
+    "chapter": 3,
+    "verse": "22-23",
+    "text": "Because of the Lord’s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.",
+    "themes": ["love", "faithfulness", "mercy"]
+  },
+  {
+    "id": 37,
+    "book": "Ephesians",
+    "chapter": 3,
+    "verse": "20",
+    "text": "Now to him who is able to do immeasurably more than all we ask or imagine, according to his power that is at work within us.",
+    "themes": ["power", "promise", "faith"]
+  },
+  {
+    "id": 38,
+    "book": "Hebrews",
+    "chapter": 10,
+    "verse": "23",
+    "text": "Let us hold unswervingly to the hope we profess, for he who promised is faithful.",
+    "themes": ["hope", "faithfulness", "promise"]
+  },
+  {
+    "id": 39,
+    "book": "John",
+    "chapter": 14,
+    "verse": "27",
+    "text": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+    "themes": ["peace", "promise", "comfort"]
+  },
+  {
+    "id": 40,
+    "book": "Revelation",
+    "chapter": 21,
+    "verse": "4",
+    "text": "‘He will wipe every tear from their eyes. There will be no more death’ or mourning or crying or pain, for the old order of things has passed away.",
+    "themes": ["hope", "promise", "comfort"]
   }
 ]
