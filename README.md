@@ -90,29 +90,27 @@ word-declaration-app/
 ### Register Example
     POST /auth/register
     Content-Type: application/json
-    ```json
     {
         "username": "test",
         "email": "test@example.com,
         "password": "password1"
     }
-    ```
-
-### Login Example
+  
+### Login Request Example 
     POST /auth/login
     Content-Type: application/json
+    <pre markdown="1"> ```python
     {
         "email": "test@example.com,
         "password": "password1"
     }
-### Login return
-    ```
+    ```</pre>
+### Login Return
     {
         "access_token": "your.jwt.token
         "token_type": "bearer"
     }
-    ```
-    
+   
 ### Get Scripture Example (Postman)
     GET /get-scripture
 
@@ -120,16 +118,15 @@ word-declaration-app/
 
 ### Save a Verse
     POST /saved-verses
+
     Headers:
-    ```
     Authorization: Bearer <your_access_token_here>
     Content-Type: application/json
-    ```
+
     Request Body:
-    ```
     {
     "verse": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you a future and a hope.",
     "reference": "Jeremiah 29:11",
     "feeling": "Hopeful"
     }
-    ```
+   
