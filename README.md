@@ -1,6 +1,6 @@
 # 📖 Word Declaration App – Backend
 
-A FastAPI-powered backend that helps users save, retrieve, and search Bible verses to encourage them whenever they feel sad.
+A FastAPI-powered backend that produces Bible verses based on how the user is feeling at the moment. The user is also able to save these Bible verses and retrieve them later.
 
 It uses OpenAI embeddings for semantic verse matching and supports secure user authentication.
 
