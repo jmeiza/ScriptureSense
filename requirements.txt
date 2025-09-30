@@ -6,3 +6,5 @@ passlib[bcrypt]
 python-jose
 python-dotenv
 openai
+numpy
+email-validator
