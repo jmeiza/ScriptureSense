@@ -878,5 +878,86 @@
     "verse": "3-4",
     "text": "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves, not looking to your own interests but each of you to the interests of the others.",
     "themes": ["humility", "love", "service"]
+  },
+  {
+    "id": 111,
+    "book": "Ephesians",
+    "chapter": 4,
+    "verse": "26-27",
+    "text": "In your anger do not sin: Do not let the sun go down while you are still angry, and do not give the devil a foothold.",
+    "themes": ["anger", "self-control", "sin"]
+  },
+  {
+    "id": 112,
+    "book": "James",
+    "chapter": 1,
+    "verse": "19-20",
+    "text": "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, because human anger does not produce the righteousness that God desires.",
+    "themes": ["anger", "patience", "wisdom"]
+  },
+  {
+    "id": 113,
+    "book": "Proverbs",
+    "chapter": 15,
+    "verse": "1",
+    "text": "A gentle answer turns away wrath, but a harsh word stirs up anger.",
+    "themes": ["anger", "speech", "gentleness"]
+  },
+  {
+    "id": 114,
+    "book": "Proverbs",
+    "chapter": 16,
+    "verse": "32",
+    "text": "Better a patient person than a warrior, one with self-control than one who takes a city.",
+    "themes": ["patience", "self-control", "anger"]
+  },
+  {
+    "id": 115,
+    "book": "Proverbs",
+    "chapter": 29,
+    "verse": "11",
+    "text": "Fools give full vent to their rage, but the wise bring calm in the end.",
+    "themes": ["anger", "wisdom", "self-control"]
+  },
+  {
+    "id": 116,
+    "book": "Colossians",
+    "chapter": 3,
+    "verse": "8",
+    "text": "But now you must also rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips.",
+    "themes": ["anger", "behavior", "purity"]
+  },
+  {
+    "id": 117,
+    "book": "Psalm",
+    "chapter": 37,
+    "verse": "8",
+    "text": "Refrain from anger and turn from wrath; do not fret—it leads only to evil.",
+    "themes": ["anger", "restraint", "peace"]
+  },
+  {
+    "id": 118,
+    "book": "Proverbs",
+    "chapter": 19,
+    "verse": "11",
+    "text": "A person’s wisdom yields patience; it is to one’s glory to overlook an offense.",
+    "themes": ["anger", "patience", "forgiveness"]
+  },
+  {
+    "id": 119,
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "verse": "9",
+    "text": "Do not be quickly provoked in your spirit, for anger resides in the lap of fools.",
+    "themes": ["anger", "self-control", "wisdom"]
+  },
+  {
+    "id": 120,
+    "book": "James",
+    "chapter": 1,
+    "verse": "20",
+    "text": "Because human anger does not produce the righteousness that God desires.",
+    "themes": ["anger", "righteousness", "patience"]
   }
+
 ]
