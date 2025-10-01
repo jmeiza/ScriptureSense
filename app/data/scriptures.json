@@ -798,5 +798,85 @@
     "verse": "10",
     "text": "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.",
     "themes": ["peace", "trust", "sovereignty"]
+  },
+  {
+    "id": 101,
+    "book": "Psalm",
+    "chapter": 19,
+    "verse": "1",
+    "text": "The heavens declare the glory of God; the skies proclaim the work of his hands.",
+    "themes": ["creation", "glory", "praise"]
+  },
+  {
+    "id": 102,
+    "book": "Isaiah",
+    "chapter": 55,
+    "verse": "8-9",
+    "text": "For my thoughts are not your thoughts, neither are your ways my ways, declares the Lord. As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts.",
+    "themes": ["wisdom", "understanding", "trust"]
+  },
+  {
+    "id": 103,
+    "book": "Jeremiah",
+    "chapter": 17,
+    "verse": "7-8",
+    "text": "Blessed is the one who trusts in the Lord, whose confidence is in him. They will be like a tree planted by the water that sends out its roots by the stream.",
+    "themes": ["trust", "faith", "stability"]
+  },
+  {
+    "id": 104,
+    "book": "Psalm",
+    "chapter": 121,
+    "verse": "3-4",
+    "text": "He will not let your foot slip—he who watches over you will not slumber; indeed, he who watches over Israel will neither slumber nor sleep.",
+    "themes": ["protection", "faithfulness", "watchfulness"]
+  },
+  {
+    "id": 105,
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": "7-8",
+    "text": "Do not be wise in your own eyes; fear the Lord and shun evil. This will bring health to your body and nourishment to your bones.",
+    "themes": ["wisdom", "fear of God", "health"]
+  },
+  {
+    "id": 106,
+    "book": "Romans",
+    "chapter": 8,
+    "verse": "38-39",
+    "text": "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.",
+    "themes": ["love", "security", "faith"]
+  },
+  {
+    "id": 107,
+    "book": "1 Peter",
+    "chapter": 2,
+    "verse": "9",
+    "text": "But you are a chosen people, a royal priesthood, a holy nation, God’s special possession, that you may declare the praises of him who called you out of darkness into his wonderful light.",
+    "themes": ["identity", "calling", "praise"]
+  },
+  {
+    "id": 108,
+    "book": "Psalm",
+    "chapter": 46,
+    "verse": "10",
+    "text": "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.",
+    "themes": ["peace", "trust", "sovereignty"]
+  },
+  {
+    "id": 109,
+    "book": "John",
+    "chapter": 14,
+    "verse": "6",
+    "text": "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'",
+    "themes": ["salvation", "truth", "faith"]
+  },
+  {
+    "id": 110,
+    "book": "Philippians",
+    "chapter": 2,
+    "verse": "3-4",
+    "text": "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves, not looking to your own interests but each of you to the interests of the others.",
+    "themes": ["humility", "love", "service"]
   }
 ]
